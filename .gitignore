@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+*.pdb
+*.tlog
+*.log
+*.opensdf
+*.sdf
+*.suo

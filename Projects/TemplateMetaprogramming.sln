@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMetaprogramming", "TemplateMetaprogramming.vcxproj", "{0B27390A-775E-81A1-8068-E5C4EC1EA89A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugFast|Win32 = DebugFast|Win32
+		Debug|Win32 = Debug|Win32
+		ReleaseSlow|Win32 = ReleaseSlow|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.DebugFast|Win32.ActiveCfg = DebugFast|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.DebugFast|Win32.Build.0 = DebugFast|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.Debug|Win32.Build.0 = Debug|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.ReleaseSlow|Win32.ActiveCfg = ReleaseSlow|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.ReleaseSlow|Win32.Build.0 = ReleaseSlow|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.Release|Win32.ActiveCfg = Release|Win32
+		{0B27390A-775E-81A1-8068-E5C4EC1EA89A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
