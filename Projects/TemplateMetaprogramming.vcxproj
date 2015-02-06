@@ -212,6 +212,8 @@
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\List.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushBack.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushFront.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Where.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\WhereIndex.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

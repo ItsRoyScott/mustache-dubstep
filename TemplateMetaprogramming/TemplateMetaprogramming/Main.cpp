@@ -4,6 +4,19 @@
 #include "InsertList.hpp"
 #include "List.hpp"
 #include <type_traits>
+#include "Where.hpp"
+#include "WhereIndex.hpp"
+
+template <std::size_t Rhs>
+struct IsGreaterThan
+{
+  template <std::size_t Lhs>
+  using type = std::conditional_t<
+    (Lhs > Rhs),
+    std::true_type,
+    std::false_type
+  >;
+};
 
 int main()
 {
@@ -28,6 +41,12 @@ int main()
   typedef InsertList_t<TestList, List<char[10], char[20]>, 0> TestListWithArrays;
 
   static_assert(std::is_same<TestListWithArrays, List<char[10], char[20], char, int, float>>::value, "");
+
+  typedef Where_t<TestList, std::is_integral> IntegralTestList;
+  typedef WhereIndex_t<TestList, IsGreaterThan<0>::type> LastTwoElementsOfTestList;
+
+  static_assert(std::is_same<IntegralTestList,          List<char, int> >::value, "");
+  static_assert(std::is_same<LastTwoElementsOfTestList, List<int, float>>::value, "");
 
   return 0;
 }

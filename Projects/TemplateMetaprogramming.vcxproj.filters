@@ -13,5 +13,7 @@
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushFront.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Insert.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\InsertList.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Where.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\WhereIndex.hpp" />
   </ItemGroup>
 </Project>
