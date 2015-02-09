@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\Logging\Logger\Severity.hpp" />
+    <ClInclude Include="..\Logging\Logger\Entry.hpp" />
+    <ClInclude Include="..\Logging\Logger\Target.hpp" />
+    <ClInclude Include="..\Logging\Logger\Logger.hpp" />
+    <ClInclude Include="..\Logging\Logger\ColoredConsoleTarget.hpp" />
+    <ClInclude Include="..\Logging\Logger\FileTarget.hpp" />
+    <ClInclude Include="..\Logging\Logger\DebugOutputWindowTarget.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Logging\Logger\Main.cpp" />
+  </ItemGroup>
+</Project>

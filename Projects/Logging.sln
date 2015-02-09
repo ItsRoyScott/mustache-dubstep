@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Logger", "Logger.vcxproj", "{25F339C1-1195-6497-FA4F-78EBE690EBE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugFast|Win32 = DebugFast|Win32
+		Debug|Win32 = Debug|Win32
+		ReleaseSlow|Win32 = ReleaseSlow|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.DebugFast|Win32.ActiveCfg = DebugFast|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.DebugFast|Win32.Build.0 = DebugFast|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.Debug|Win32.Build.0 = Debug|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.ReleaseSlow|Win32.ActiveCfg = ReleaseSlow|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.ReleaseSlow|Win32.Build.0 = ReleaseSlow|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.Release|Win32.ActiveCfg = Release|Win32
+		{25F339C1-1195-6497-FA4F-78EBE690EBE7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

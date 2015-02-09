@@ -200,9 +200,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\At.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Identity.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\If.hpp" />
@@ -214,6 +211,9 @@
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushFront.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Where.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\WhereIndex.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -5,76 +5,66 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 struct TestInfo
 {
-  string CategoryName;
-  function<void()> Function;
-  vector<string> Parameters;
-  string TestName;
+  std::string               CategoryName;
+  std::function<void()>     Function;
+  std::vector<std::string>  Parameters;
+  std::string               TestName;
 };
 
 class TestFramework
 {
+public: // data
+
+  std::vector<std::string> Excludes;
+  std::vector<std::string> Includes;
+  std::vector<std::string> Logs;
+  std::vector<TestInfo> Tests;
+
 public:
 
-  int Run(vector<TestInfo> tests, vector<string> excludes, vector<string> includes)
+  int Run()
   {
-    auto testsToRun = vector<TestInfo*>(tests.size());
-    
-    if (includes.empty())
+    auto testsToRun = std::vector<TestInfo*>(Tests.size());
+    for (auto& test : tests)
     {
-      testsToRun = tests;
+      testsToRun.push_back(&test);
     }
-    else
+    
+    for (auto& include : includes)
     {
-      copy_if(
-        tests.begin(), 
-        tests.end(),
+      testsToRun.erase(std::remove_if(
         testsToRun.begin(),
-        [](auto& test) 
+        testsToRun.end(),
+        [&](TestInfo* test) 
         { 
-          for (auto& include : includes)
-          {
-            if (test.CategoryName == include || test.TestName == include)
-            {
-              return true;
-            }
-          }
-          
-          return false;
+          return test->CategoryName != include || test->TestName != include;
         }));
     }
-    
-    if (!excludes.empty())
+
+    for (auto& exclude : excludes)
     {
-      testsToRun.erase(remove_if(
-        testsToRun.begin(), 
-        testsToRun.end(), 
-        [](auto& test) 
+      testsToRun.erase(std::remove_if(
+        testsToRun.begin(),
+        testsToRun.end(),
+        [&](TestInfo* test) 
         { 
-          for (auto& exclude : excludes)
-          {
-            if (test.CategoryName == exclude || test.TestName == exclude)
-            {
-              return true;
-            }
-          }
-          
-          return false;
+          return test->CategoryName == exclude || test->TestName == exclude;
         }));
     }
-    
+
     for (auto& test : testsToRun)
     {
       try
       {
-        test.Function();
+        test->Function();
+
+        Logs.push_back("");
       }
-      catch (...)
+      catch (std::exception& ex)
       {
-        
+        Logs.push_back()
       }
     }
   }
