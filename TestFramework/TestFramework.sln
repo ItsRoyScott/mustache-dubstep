@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFramework", "TestFramework.vcxproj", "{53516FC5-BF11-EBFB-884C-3479F4CB2FD8}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFramework.Test", "TestFramework.Test.vcxproj", "{2151B639-0D35-778F-7695-71E262986111}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestFramework", "TestFramework\TestFramework.vcxproj", "{53516FC5-BF11-EBFB-884C-3479F4CB2FD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +19,6 @@ Global
 		{53516FC5-BF11-EBFB-884C-3479F4CB2FD8}.ReleaseSlow|Win32.Build.0 = ReleaseSlow|Win32
 		{53516FC5-BF11-EBFB-884C-3479F4CB2FD8}.Release|Win32.ActiveCfg = Release|Win32
 		{53516FC5-BF11-EBFB-884C-3479F4CB2FD8}.Release|Win32.Build.0 = Release|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.DebugFast|Win32.ActiveCfg = DebugFast|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.DebugFast|Win32.Build.0 = DebugFast|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.Debug|Win32.Build.0 = Debug|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.ReleaseSlow|Win32.ActiveCfg = ReleaseSlow|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.ReleaseSlow|Win32.Build.0 = ReleaseSlow|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.Release|Win32.ActiveCfg = Release|Win32
-		{2151B639-0D35-778F-7695-71E262986111}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

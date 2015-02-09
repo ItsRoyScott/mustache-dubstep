@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{0B27390A-775E-81A1-8068-E5C4EC1EA89A}</ProjectGuid>
+    <ProjectGuid>{25F339C1-1195-6497-FA4F-78EBE690EBE7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>TemplateMetaprogramming</RootNamespace>
+    <RootNamespace>Logger</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -66,33 +66,33 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\TemplateMetaprogramming\Debug\</IntDir>
-    <TargetName>TemplateMetaprogramming-vs2013-Debug</TargetName>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Intermediate\Logging\Debug\</IntDir>
+    <TargetName>Logger-vs2013-Debug</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugFast|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\TemplateMetaprogramming\DebugFast\</IntDir>
-    <TargetName>TemplateMetaprogramming-vs2013-DebugFast</TargetName>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Intermediate\Logging\DebugFast\</IntDir>
+    <TargetName>Logger-vs2013-DebugFast</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSlow|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\TemplateMetaprogramming\ReleaseSlow\</IntDir>
-    <TargetName>TemplateMetaprogramming-vs2013-ReleaseSlow</TargetName>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Intermediate\Logging\ReleaseSlow\</IntDir>
+    <TargetName>Logger-vs2013-ReleaseSlow</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\TemplateMetaprogramming\Release\</IntDir>
-    <TargetName>TemplateMetaprogramming</TargetName>
+    <OutDir>..\..\Build\</OutDir>
+    <IntDir>..\..\Intermediate\Logging\Release\</IntDir>
+    <TargetName>Logger</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
@@ -102,16 +102,16 @@
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ProgramDataBaseFileName>$(OutDir)TemplateMetaprogramming-vs2013-Debug.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)Logger-vs2013-Debug.pdb</ProgramDataBaseFileName>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
       <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,9 +125,9 @@
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ProgramDataBaseFileName>$(OutDir)TemplateMetaprogramming-vs2013-DebugFast.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)Logger-vs2013-DebugFast.pdb</ProgramDataBaseFileName>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -138,7 +138,7 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,16 +154,16 @@
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ProgramDataBaseFileName>$(OutDir)TemplateMetaprogramming-vs2013-ReleaseSlow.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)Logger-vs2013-ReleaseSlow.pdb</ProgramDataBaseFileName>
       <Optimization>Disabled</Optimization>
       <MinimalRebuild>false</MinimalRebuild>
       <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -177,9 +177,9 @@
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ProgramDataBaseFileName>$(OutDir)TemplateMetaprogramming.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)Logger.pdb</ProgramDataBaseFileName>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -189,7 +189,7 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\TemplateMetaprogramming;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -200,25 +200,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\At.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Bind.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\ComparisonOperators.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Evaluate.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Identity.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\If.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\IndexOf.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Insert.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\InsertList.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\List.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\LogicalOperators.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushBack.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushFront.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\ValueTypes.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Where.hpp" />
-    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\WhereIndex.hpp" />
+    <ClInclude Include="ColoredConsoleTarget.hpp" />
+    <ClInclude Include="DebugOutputWindowTarget.hpp" />
+    <ClInclude Include="Entry.hpp" />
+    <ClInclude Include="FileTarget.hpp" />
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="Logging.hpp" />
+    <ClInclude Include="Severity.hpp" />
+    <ClInclude Include="Target.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Main.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

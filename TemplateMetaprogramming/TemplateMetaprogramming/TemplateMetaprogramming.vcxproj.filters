@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="At.hpp" />
+    <ClInclude Include="Bind.hpp" />
+    <ClInclude Include="ComparisonOperators.hpp" />
+    <ClInclude Include="Evaluate.hpp" />
+    <ClInclude Include="Identity.hpp" />
+    <ClInclude Include="If.hpp" />
+    <ClInclude Include="IndexOf.hpp" />
+    <ClInclude Include="Insert.hpp" />
+    <ClInclude Include="InsertList.hpp" />
+    <ClInclude Include="List.hpp" />
+    <ClInclude Include="LogicalOperators.hpp" />
+    <ClInclude Include="PushBack.hpp" />
+    <ClInclude Include="PushFront.hpp" />
+    <ClInclude Include="ValueTypes.hpp" />
+    <ClInclude Include="Where.hpp" />
+    <ClInclude Include="WhereIndex.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+</Project>

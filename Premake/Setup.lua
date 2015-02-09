@@ -1,5 +1,5 @@
 ObjDir = "../Intermediate/"
-ProjectDir = "../Projects/"
+SolutionDir = "./"
 TargetDir = "../Build/"
 
 function NewSolution(solutionName)
@@ -18,7 +18,7 @@ function NewSolution(solutionName)
     floatingpoint "Fast"
     includedirs   "."
     language      "C++"
-    location      (ProjectDir)
+    location      (SolutionDir)
     objdir        (ObjDir .. solutionName .. "/")
     warnings      "Extra"
     
@@ -52,6 +52,6 @@ function NewProject(projectName, projectKind)
       projectName .. "/**.hpp"
     }
     kind      (projectKind)
-    location  (ProjectDir)
+    location  (SolutionDir .. projectName .. "/")
     targetdir (TargetDir)
 end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="ColoredConsoleTarget.hpp" />
+    <ClInclude Include="DebugOutputWindowTarget.hpp" />
+    <ClInclude Include="Entry.hpp" />
+    <ClInclude Include="FileTarget.hpp" />
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="Logging.hpp" />
+    <ClInclude Include="Severity.hpp" />
+    <ClInclude Include="Target.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+</Project>

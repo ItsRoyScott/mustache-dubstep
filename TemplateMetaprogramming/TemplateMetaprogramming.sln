@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMetaprogramming", "TemplateMetaprogramming.vcxproj", "{0B27390A-775E-81A1-8068-E5C4EC1EA89A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMetaprogramming", "TemplateMetaprogramming\TemplateMetaprogramming.vcxproj", "{0B27390A-775E-81A1-8068-E5C4EC1EA89A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
