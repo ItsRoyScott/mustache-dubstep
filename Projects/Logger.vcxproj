@@ -67,7 +67,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Debug\</IntDir>
+    <IntDir>..\Intermediate\Logging\Debug\</IntDir>
     <TargetName>Logger-vs2013-Debug</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -75,7 +75,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugFast|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\DebugFast\</IntDir>
+    <IntDir>..\Intermediate\Logging\DebugFast\</IntDir>
     <TargetName>Logger-vs2013-DebugFast</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -83,7 +83,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSlow|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\ReleaseSlow\</IntDir>
+    <IntDir>..\Intermediate\Logging\ReleaseSlow\</IntDir>
     <TargetName>Logger-vs2013-ReleaseSlow</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -91,7 +91,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Release\</IntDir>
+    <IntDir>..\Intermediate\Logging\Release\</IntDir>
     <TargetName>Logger</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -205,6 +205,7 @@
     <ClInclude Include="..\Logging\Logger\Entry.hpp" />
     <ClInclude Include="..\Logging\Logger\FileTarget.hpp" />
     <ClInclude Include="..\Logging\Logger\Logger.hpp" />
+    <ClInclude Include="..\Logging\Logger\Logging.hpp" />
     <ClInclude Include="..\Logging\Logger\Severity.hpp" />
     <ClInclude Include="..\Logging\Logger\Target.hpp" />
   </ItemGroup>

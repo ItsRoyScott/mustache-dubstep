@@ -67,7 +67,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Debug\</IntDir>
+    <IntDir>..\Intermediate\TemplateMetaprogramming\Debug\</IntDir>
     <TargetName>TemplateMetaprogramming-vs2013-Debug</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -75,7 +75,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugFast|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\DebugFast\</IntDir>
+    <IntDir>..\Intermediate\TemplateMetaprogramming\DebugFast\</IntDir>
     <TargetName>TemplateMetaprogramming-vs2013-DebugFast</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -83,7 +83,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSlow|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\ReleaseSlow\</IntDir>
+    <IntDir>..\Intermediate\TemplateMetaprogramming\ReleaseSlow\</IntDir>
     <TargetName>TemplateMetaprogramming-vs2013-ReleaseSlow</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -91,7 +91,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Release\</IntDir>
+    <IntDir>..\Intermediate\TemplateMetaprogramming\Release\</IntDir>
     <TargetName>TemplateMetaprogramming</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -201,14 +201,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\At.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Bind.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\ComparisonOperators.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Evaluate.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Identity.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\If.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\IndexOf.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Insert.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\InsertList.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\List.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\LogicalOperators.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushBack.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\PushFront.hpp" />
+    <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\ValueTypes.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\Where.hpp" />
     <ClInclude Include="..\TemplateMetaprogramming\TemplateMetaprogramming\WhereIndex.hpp" />
   </ItemGroup>

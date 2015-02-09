@@ -1,7 +1,9 @@
 #include "At.hpp"
+#include "ComparisonOperators.hpp"
 #include "IndexOf.hpp"
 #include "Insert.hpp"
 #include "InsertList.hpp"
+#include "LogicalOperators.hpp"
 #include "List.hpp"
 #include <type_traits>
 #include "Where.hpp"
@@ -47,6 +49,24 @@ int main()
 
   static_assert(std::is_same<IntegralTestList,          List<char, int> >::value, "");
   static_assert(std::is_same<LastTwoElementsOfTestList, List<int, float>>::value, "");
+
+  static_assert(EqualTo_t<Int<5>, Int<5>>::value, "");
+  static_assert(NotEqualTo_t<Int<3>, Int<5>>::value, "");
+  static_assert(GreaterThan_t<Int<7>, Int<5>>::value, "");
+  static_assert(
+    GreaterThanOrEqualTo_t<Int<7>, Int<5>>::value && 
+    GreaterThanOrEqualTo_t<Int<5>, Int<5>>::value, "");
+  static_assert(LessThan_t<Int<3>, Int<5>>::value, "");
+  static_assert(
+    LessThanOrEqualTo_t<Int<3>, Int<5>>::value &&
+    LessThanOrEqualTo_t<Int<5>, Int<5>>::value, "");
+
+  static_assert(Not_t<Bool<false>>::value == true, "");
+  static_assert(Not_t<Bool<true>>::value == false, "");
+  static_assert(And_t<Bool<true>, Bool<false>, Bool<true>>::value == false, "");
+  static_assert(And_t<Bool<true>, Bool<true>, Bool<true>>::value == true, "");
+  static_assert(Or_t<Bool<false>, Bool<false>, Bool<true>>::value == true, "");
+  static_assert(Or_t<Bool<false>, Bool<false>, Bool<false>>::value == false, "");
 
   return 0;
 }

@@ -67,7 +67,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Debug\TestFramework.Test\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\Debug\TestFramework.Test\</IntDir>
     <TargetName>TestFramework.Test-vs2013-Debug</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -75,7 +75,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugFast|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\DebugFast\TestFramework.Test\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\DebugFast\TestFramework.Test\</IntDir>
     <TargetName>TestFramework.Test-vs2013-DebugFast</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -83,7 +83,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSlow|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\ReleaseSlow\TestFramework.Test\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\ReleaseSlow\TestFramework.Test\</IntDir>
     <TargetName>TestFramework.Test-vs2013-ReleaseSlow</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>
@@ -91,7 +91,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Release\TestFramework.Test\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\Release\TestFramework.Test\</IntDir>
     <TargetName>TestFramework.Test</TargetName>
     <TargetExt>.exe</TargetExt>
     <GenerateManifest>false</GenerateManifest>

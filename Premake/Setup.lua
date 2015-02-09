@@ -19,7 +19,7 @@ function NewSolution(solutionName)
     includedirs   "."
     language      "C++"
     location      (ProjectDir)
-    objdir        (ObjDir)
+    objdir        (ObjDir .. solutionName .. "/")
     warnings      "Extra"
     
     configurations { "Debug", "DebugFast", "ReleaseSlow", "Release" }

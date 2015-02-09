@@ -66,28 +66,28 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Debug\TestFramework\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\Debug\TestFramework\</IntDir>
     <TargetName>TestFramework-vs2013-Debug</TargetName>
     <TargetExt>.lib</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugFast|Win32'">
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\DebugFast\TestFramework\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\DebugFast\TestFramework\</IntDir>
     <TargetName>TestFramework-vs2013-DebugFast</TargetName>
     <TargetExt>.lib</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSlow|Win32'">
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\ReleaseSlow\TestFramework\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\ReleaseSlow\TestFramework\</IntDir>
     <TargetName>TestFramework-vs2013-ReleaseSlow</TargetName>
     <TargetExt>.lib</TargetExt>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\Build\</OutDir>
-    <IntDir>..\Intermediate\Release\TestFramework\</IntDir>
+    <IntDir>..\Intermediate\TestFramework\Release\TestFramework\</IntDir>
     <TargetName>TestFramework</TargetName>
     <TargetExt>.lib</TargetExt>
     <GenerateManifest>false</GenerateManifest>
